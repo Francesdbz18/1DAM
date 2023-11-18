@@ -1,0 +1,67 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Ejemplo01STR",
+            "request": "launch",
+            "mainClass": "actividades.Ejemplo01STR",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad2_5",
+            "request": "launch",
+            "mainClass": "actividades.Actividad2_5",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad2_4",
+            "request": "launch",
+            "mainClass": "actividades.Actividad2_4",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad2_3c",
+            "request": "launch",
+            "mainClass": "actividades.Actividad2_3c",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad2_3b",
+            "request": "launch",
+            "mainClass": "actividades.Actividad2_3b",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad2_3",
+            "request": "launch",
+            "mainClass": "actividades.Actividad2_3",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad2_2",
+            "request": "launch",
+            "mainClass": "actividades.Actividad2_2",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad2_1",
+            "request": "launch",
+            "mainClass": "actividades.Actividad2_1",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad05",
+            "request": "launch",
+            "mainClass": "actividades.Actividad05",
+            "projectName": "clase"
+        }
+    ]
+}
