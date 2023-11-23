@@ -30,30 +30,36 @@ public class Actividad2_15 {
     }
     public static void menu () {
         int num = 0;
-        System.out.print("1. Muestra si un número es primo o no.\n2. Calcula el factorial de un número\n3. Muestra si un año es bisiesto o no.");
-        int opcion = teclado.nextInt();
-        switch (opcion) {
-            case 1:
-            System.out.print("Ingrese un numero entero positivo para saber si es primo o no: ");
-            num = teclado.nextInt();
-            boolean primo = nPrimo(num);
-            if (primo) System.out.println(num + " es un numero primo");
-            else System.out.println(num+ " no es un número primo.");
-            break;
-            case 2:
-            System.out.print("Ingrese el valor de N en la formula del factorial: ");
-            num = teclado.nextInt();
-            System.out.println("El factorial de "+num+" es: "+factorial(num));
-            break;
-            case 3: 
-            System.out.print("Ingrese el año a verificar si es bisiesto: ");
-            num = teclado.nextInt();
-            esBisiesto(num);
-            break;
-            default:
-            System.out.println("Opcion invalida, vuelva a intentarlo");
-            break;
-        }
+        int opcion;
+        System.out.println("1. Muestra si un número es primo o no.\n2. Calcula el factorial de un número\n3. Muestra si un año es bisiesto o no.\n0. Sale del programa.");
+        do {
+            opcion = teclado.nextInt();
+            switch (opcion) {
+                case 0:
+                System.out.println("Saliendo...");
+                    break;
+                case 1:
+                System.out.print("Ingrese un numero entero positivo para saber si es primo o no: ");
+                num = teclado.nextInt();
+                boolean primo = nPrimo(num);
+                if (primo) System.out.println(num + " es un numero primo");
+                else System.out.println(num+ " no es un número primo.");
+                break;
+                case 2:
+                System.out.print("Ingrese el valor de N en la formula del factorial: ");
+                num = teclado.nextInt();
+                System.out.println("El factorial de "+num+" es: "+factorial(num));
+                break;
+                case 3: 
+                System.out.print("Ingrese el año a verificar si es bisiesto: ");
+                num = teclado.nextInt();
+                esBisiesto(num);
+                break;
+                default:
+                System.out.println("Opcion invalida, vuelva a intentarlo");
+                break;
+            }
+        } while (opcion!=0);
     }
     public static void main(String[] args) {
         menu();
