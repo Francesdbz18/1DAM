@@ -2,25 +2,18 @@ package actividades;
 import java.util.Scanner;
 @SuppressWarnings("resource")
 
-public class Actividad3_1b { //ACTIVIDADES PROPUESTAS 3 - 01 (hace pirámide)
+public class TareaNavidad {
     public static void triangulin(char a, int f) {
-        for(int i=1;i<=f;i++){ //altura
+        for(int i=1;i<=f;i++){ //altura y arbolito
             for (int esp = 1+i; esp <= f; esp++) //espacios en blanco
                 System.out.print(" ");
             for (int simbolos = 1; simbolos < i*2; simbolos++) { //símbolos a mostrar
                 System.out.print(a); 
             }
-            System.out.println();
+            System.out.println(i);
         }//fin for altura
-    }//fin procedimiento
-    public static void triangulin2(char a, int f) { //ESTE ES EL CORRECTO XD
-            for(int i=1;i<=f;i++){ //altura
-            for (int simbolos = f; simbolos >= i; simbolos--) { //símbolos a mostrar
-                System.out.print(a); 
-            }
-            System.out.println();
-        }//fin for altura
-    }//fin procedimiento   
+
+    }
     public static void main(String[] args) {
         Scanner scanner = new Scanner (System.in);
         char simbolo;
@@ -31,4 +24,4 @@ public class Actividad3_1b { //ACTIVIDADES PROPUESTAS 3 - 01 (hace pirámide)
         filas = scanner.nextInt();
         triangulin(simbolo, filas);
     } //fin main
-} //fin clase
+}

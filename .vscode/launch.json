@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TareaNavidad",
+            "request": "launch",
+            "mainClass": "actividades.TareaNavidad",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
             "name": "Actividad3_1d",
             "request": "launch",
             "mainClass": "actividades.Actividad3_1d",
