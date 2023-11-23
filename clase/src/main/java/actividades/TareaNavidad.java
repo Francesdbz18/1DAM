@@ -4,13 +4,14 @@ import java.util.Scanner;
 
 public class TareaNavidad {
     public static void triangulin(char a, int f) {
+        int simbolos, esp;
         for(int i=1;i<=f;i++){ //altura y arbolito
-            for (int esp = 1+i; esp <= f; esp++) //espacios en blanco
+            for (esp = 1+i; esp <= f; esp++) //espacios en blanco 
                 System.out.print(" ");
-            for (int simbolos = 1; simbolos < i*2; simbolos++) { //símbolos a mostrar
+            for (simbolos = 1; simbolos < i*2; simbolos++) { //símbolos a mostrar (total = simbolos - 1)
                 System.out.print(a); 
             }
-            System.out.println(i);
+            System.out.println();
         }//fin for altura
 
     }
