@@ -2,6 +2,111 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Actividad3_1d",
+            "request": "launch",
+            "mainClass": "actividades.Actividad3_1d",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad3_1b",
+            "request": "launch",
+            "mainClass": "actividades.Actividad3_1b",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad3_1c",
+            "request": "launch",
+            "mainClass": "actividades.Actividad3_1c",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad3_1a",
+            "request": "launch",
+            "mainClass": "actividades.Actividad3_1a",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad2_15",
+            "request": "launch",
+            "mainClass": "actividades.Actividad2_15",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad2_14",
+            "request": "launch",
+            "mainClass": "actividades.Actividad2_14",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "juego",
+            "request": "launch",
+            "mainClass": "actividades.juego",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Jueguinho",
+            "request": "launch",
+            "mainClass": "actividades.Jueguinho",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad2_13",
+            "request": "launch",
+            "mainClass": "actividades.Actividad2_13",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad2_12",
+            "request": "launch",
+            "mainClass": "actividades.Actividad2_12",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad2_11",
+            "request": "launch",
+            "mainClass": "actividades.Actividad2_11",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad2_6",
+            "request": "launch",
+            "mainClass": "actividades.Actividad2_6",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad2_7",
+            "request": "launch",
+            "mainClass": "actividades.Actividad2_7",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad2_8",
+            "request": "launch",
+            "mainClass": "actividades.Actividad2_8",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad2_9",
+            "request": "launch",
+            "mainClass": "actividades.Actividad2_9",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
             "name": "Ejemplo01STR",
             "request": "launch",
             "mainClass": "actividades.Ejemplo01STR",

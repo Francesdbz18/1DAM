@@ -1,5 +1,6 @@
 package actividades;
 import java.lang.Math;
+import java.util.Arrays;
 public class Ejemplo01STR {
     public static void main (String [] args) {
         String texto = "Hola mundo";
@@ -11,7 +12,7 @@ public class Ejemplo01STR {
         //Obtener una palabra de la cadena
         char buffer[] = new char [5];
         texto.getChars(5, 9, buffer, 0);
-        System.out.println("El buffer copiado es: "+buffer);
+        System.out.println("El buffer copiado es: "+ Arrays.toString(buffer));
 
         //Comparaciones
         String nombre1 = "Juan";
@@ -43,7 +44,7 @@ public class Ejemplo01STR {
         int contador = 0;//contador de ocurrencias
 
         while (sTexto.indexOf(busqueda) > -1) {
-            sTexto = sTexto.substring(sTexto.indexOf(busqueda)+busqueda.length(),contador);
+            sTexto = sTexto.substring(sTexto.indexOf(busqueda)+busqueda.length());
             contador++;
         } //fin del while
         System.out.println("El contador es: " +contador);

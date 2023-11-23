@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Actividad2_3b {
     public static void serieFORcustom (int a, int b) {
         int suma = 0;
-        for (a = a; a<=b; a+=3) {
+        for (; a<=b; a+=3) {
             if (a<b-1) {
             System.out.print(a+", ");
             } else {System.out.print(a + "\n");}
@@ -14,7 +14,7 @@ public class Actividad2_3b {
     }
     public static void serieFORcustomfull (int a, int b, int c) {
         int suma = 0;
-        for (a = a; a<=b; a+=c) {
+        for (;a<=b; a+=c) {
             if (a<b-1) {
             System.out.print(a+", ");
             } else {System.out.print(a + "\n");}
