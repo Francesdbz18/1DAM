@@ -8,13 +8,14 @@ public class TareaNavidad {
         for(int i=1;i<=f;i++){ //altura y arbolito
             for (esp = 1+i; esp <= f; esp++) //espacios en blanco 
                 System.out.print(" ");
-            for (simbolos = 1; simbolos < i*2; simbolos++) { //símbolos a mostrar (total = simbolos - 1)
+            for (simbolos = 1; simbolos < i*2; simbolos++) { //símbolos a mostrar (total = simbolos - 1 = doble de la fila - 1) 
                 System.out.print(a); 
             }
             System.out.println();
         }//fin for altura
-
     }
+    //TODO: Tronco: altura = f/3 y anchura = (simbolos - 1) / 3.
+    //TODO: Centrar árbol y tronco: medida terminal = 80 caracteres.
     public static void main(String[] args) {
         Scanner scanner = new Scanner (System.in);
         char simbolo;
