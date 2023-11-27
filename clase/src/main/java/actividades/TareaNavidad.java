@@ -14,8 +14,8 @@ public class TareaNavidad {
             System.out.println();
         }//fin for altura
     }
-    //TODO: Tronco: altura = f/3 y anchura = (simbolos - 1) / 3.
-    //TODO: Centrar árbol y tronco: medida terminal = 80 caracteres.
+    //TO-DO: Tronco: altura = f/3 y anchura = (simbolos - 1) / 3.
+    //TO-DO: Centrar árbol y tronco: medida terminal = 80 caracteres.
     public static void main(String[] args) {
         Scanner scanner = new Scanner (System.in);
         char simbolo;
