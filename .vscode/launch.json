@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Actividad2_20",
+            "request": "launch",
+            "mainClass": "actividades.Actividad2_20",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
+            "name": "Actividad2_21",
+            "request": "launch",
+            "mainClass": "actividades.Actividad2_21",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
             "name": "TareaNavidad",
             "request": "launch",
             "mainClass": "actividades.TareaNavidad",
