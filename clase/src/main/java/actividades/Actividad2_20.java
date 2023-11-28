@@ -25,7 +25,7 @@ public class Actividad2_20 {
     }//fin procedimiento
     public static void serie2B (int n) {
         char i, j;
-        for(i='A';i<n+'A';i++) {
+        for(i = 'A'; i < n + 'A' ; i++) {
             for(j='A';j<=i;j++) {
             if(j<i) System.out.print(i+", ");
             else System.out.print(i);
@@ -36,30 +36,38 @@ public class Actividad2_20 {
     }//fin procedimiento
     public static void serie3 (int n) {
         int i;
-        for(i=1;i<=n;i++) {
-            if(i%2==0) System.out.print("1, ");
-            else if (i%2==0&&i+1==n) System.out.print("1\n");
-            else if (i%2!=0&&i<n) System.out.print("-1, ");
+        for(i = 1; i <= n; i++) {
+            if(i % 2 == 0) System.out.print("1, ");
+            else if (i % 2 == 0 && i + 1 == n) System.out.print("1\n");
+            else if (i % 2 != 0 && i < n) System.out.print("-1, ");
             else System.out.print("-1\n");
         }//fin for
     }//fin procedimiento
     public static void serie4 (int n) {
+        /* int serie = 1, serieant = 0;
+        String cadena = "";
+        for(int i = 1; i <= n; i+=2) {
+            serieant = serie;
+            serie +=4;
+            cadena = Integer.toString(serieant);
+            cadena = cadena.concat(" "+Integer.toString(serie));
+            serieant = serie;
+            serie -=2;
+            cadena = Integer.toString(serieant);
+            cadena = cadena.concat(" "+Integer.toString(serie));
+            }
+            System.out.println(cadena); */
+    } // fin procedimiento
+    public static void serie4b (int n) {
         String cadena = "1 5 3 7 5 9 7 11 9 13";
         String[] partes = cadena.split(" ");
         for (int i = 0; i<=n;i++) {
             if(i==n) System.out.print(partes[i]+"\n");
             else System.out.print(partes[i]+" ");
-        }//fin for
-    }//fin procedimiento
-    public static void serie4b (int n) {
-        int [] cadena = new int[]{1,5,3,7,5,9,7,11,9,13};
-        for (int i = 0; i<=n;i++) {
-            if(i==n) System.out.print(cadena[i]+"\n");
-            else System.out.print(cadena[i]+" ");
-        } //fin for
+        }
     }//fin procedimiento
     public static void menu (int opcion, char opcion2, int n) {
-        while (opcion!=0) {
+        //while (opcion!=0) {
             switch (opcion){
                 case 0: 
                 System.out.println("Saliendo...");
@@ -96,7 +104,7 @@ public class Actividad2_20 {
                             break;
                     } //fin switch serie4
             }//fin switch menu
-        }//fin while
+        //}//fin while
     }//fin procedimiento
     public static void main(String[] args) {
         int n, opcion;
