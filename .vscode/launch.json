@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "EjemplosArbol",
+            "request": "launch",
+            "mainClass": "actividades.EjemplosArbol",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
             "name": "Actividad2_20",
             "request": "launch",
             "mainClass": "actividades.Actividad2_20",

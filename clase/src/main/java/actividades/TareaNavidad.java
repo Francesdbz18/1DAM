@@ -3,7 +3,7 @@ import java.util.Scanner;
 @SuppressWarnings("resource")
 
 public class TareaNavidad {
-    public static void triangulin(char a, int f) {
+    public static void copa(char a, int f) {
         int simbolos, esp;
         for(int i=1;i<=f;i++){ //altura y arbolito
             for (esp = 1+i; esp <= f; esp++) //espacios en blanco 
@@ -20,10 +20,10 @@ public class TareaNavidad {
         Scanner scanner = new Scanner (System.in);
         char simbolo;
         int filas;
-        System.out.print("Introduzca el símbolo con el que quiere formar su triángulo: ");
+        System.out.print("Introduzca el símbolo con el que quiere formar su árbol: ");
         simbolo = scanner.next().charAt(0);
         System.out.print("Introduzca el número de filas a realizar: ");
         filas = scanner.nextInt();
-        triangulin(simbolo, filas);
+        copa(simbolo, filas);
     } //fin main
 }
