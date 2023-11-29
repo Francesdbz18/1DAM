@@ -53,7 +53,7 @@ public class Tarea3Arbol {
     public static void mostrarTronco(int filas, char simbolo) {
         int l, ancho, altura;
         ancho = Math.round((float)((filas * 2) - 1) / 3); //El ancho de la última fila del árbol es igual al doble del número de filas menos 1. Se divide entre 3 para lograr el ancho deseado del tronco.
-        altura = (int) Math.ceil((float)filas / 3); //Se usa Math.round para redondear el ancho del tronco al entero más próximo, y Math.ceil para aproximar la altura del tronco al entero más alto.
+        altura = Math.round((float)filas / 3); //Se usa Math.round para redondear el ancho del tronco y su altura al entero más próximo.
         // Imprimir tronco del árbol centrado
         for (l = 0; l < altura; l++) {
             imprimirArbol(ancho, simbolo);
