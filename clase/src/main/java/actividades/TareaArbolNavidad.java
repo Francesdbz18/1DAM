@@ -22,8 +22,8 @@ public class TareaArbolNavidad {
             imprimirLineaCentrada(2 * i + 1, simboloRelleno);
         }
         // Calcular dimensiones del tronco
-        int anchoTronco = alturaCopa * 2 / 3;
-        int alturaTronco = alturaCopa / 3;
+        int anchoTronco = Math.round((float)((alturaCopa * 2) - 1) / 3);
+        int alturaTronco = (int) Math.ceil((float)alturaCopa / 3);
         // Imprimir tronco del árbol centrado
         for (int i = 0; i < alturaTronco; i++) {
             imprimirLineaCentrada(anchoTronco, simboloRelleno);
@@ -32,13 +32,15 @@ public class TareaArbolNavidad {
 
     public static void imprimirLineaCentrada(int longitud, char caracter) {
         int anchoConsola = 80;
-        int margenIzquierdo = (anchoConsola - longitud) / 2;
+        int margenIzquierdo = (longitud%2!=0)? (int)(anchoConsola - longitud)/2:(int)((anchoConsola - longitud)/2)-1;
+        
         for (int i = 0; i < margenIzquierdo; i++) {
             System.out.print(" ");
         }
         for (int i = 0; i < longitud; i++) {
             System.out.print(caracter);
         }
+        if (longitud % 2 == 0) System.out.print(caracter); //Para centrar completamente el árbol, añade un símbolo a la derecha para cuadrarlo con la copa del árbol
         System.out.println();
     }
 }
