@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Tarea3Arbol",
+            "request": "launch",
+            "mainClass": "actividades.Tarea3Arbol",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
             "name": "TareaArbolNavidad",
             "request": "launch",
             "mainClass": "actividades.TareaArbolNavidad",
