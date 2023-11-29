@@ -27,3 +27,4 @@ public class TareaNavidad {
         copa(simbolo, filas);
     } //fin main
 }
+//CÓMO ABORDAR EL PROBLEMA: Se debe centrar conforme se dibuja cada línea: función imprimirLineaCentrada. Función de copa debe devolver un array con ancho y altura del tronco del árbol. Caca pene tetas sexo xd
