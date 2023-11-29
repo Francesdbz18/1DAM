@@ -20,7 +20,7 @@ public class Tarea3Arbol {
     public static void imprimirArbol(int ancho, char simbolo) { //Recibe el ancho de lo que se quiere imprimir (copa o tronco) y el símbolo con el que se quiere rellenar.
         int espacio = 0, i = 0, j = 0, consola = 0;
         consola = 80; //Está indicado en el enunciado el supuesto de que la consola mide 80 caracteres.
-        espacio = (ancho%2!=0)? (int)(consola - ancho)/2:(int)((consola - ancho)/2)-1; //La variable espacio define cuántos espacios en blanco deben imprimirse a la izquierda. Si el ancho es par, se resta uno para cuadrar el relleno del tronco con la punta de la copa.
+        espacio = (ancho%2!=0)? (int)(consola - ancho)/2:(int)((consola - ancho)/2)-1; //La variable espacio define cuántos espacios en blanco deben imprimirse a la izquierda. Si el ancho es par, se resta uno para cuadrar el relleno del tronco con la punta de la copa. Si no es par, se procede directamente con la resta del ancho a la longitud de la consola, en este caso 80 caracteres.
         for (i = 0; i < espacio; i++) {
             System.out.print(" ");
         } //Fin for.
