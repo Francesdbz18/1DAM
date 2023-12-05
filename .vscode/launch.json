@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "profe",
+            "request": "launch",
+            "mainClass": "actividades.profe",
+            "projectName": "clase"
+        },
+        {
+            "type": "java",
             "name": "Tarea3Arbol",
             "request": "launch",
             "mainClass": "actividades.Tarea3Arbol",
