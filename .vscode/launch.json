@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "tema3arrays.Main",
+            "projectName": "tema3arrays"
+        },
+        {
+            "type": "java",
             "name": "profe",
             "request": "launch",
             "mainClass": "actividades.profe",

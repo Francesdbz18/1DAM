@@ -95,4 +95,14 @@ public class Funciones {
         }//fin while
         return numbers;
     }
+    static void imprimirArrayUni(int a[], int length) {
+        System.out.print("El resultado del array es: [");
+        for (int i = 0; i<length;i++) {
+            System.out.print(a[i]);
+            if (i<length-1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.print("]");
+    }
 }
