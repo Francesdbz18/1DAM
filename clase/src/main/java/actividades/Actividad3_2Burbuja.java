@@ -62,8 +62,6 @@ public class Actividad3_2Burbuja {
         int [] array = {10, 1, 5, 40, 12, 34, 44, 12, 11, 91};
         int longitud = array.length;
 
-        int [] arrayDesc 
-
         bubblesort(array);
         imprimirArrayUni(array, longitud);
         System.out.println("\nVersión mejorada: ");
