@@ -103,6 +103,6 @@ public class Funciones {
                 System.out.print(", ");
             }
         }
-        System.out.print("]");
+        System.out.println("]");
     }
 }
