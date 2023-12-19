@@ -24,14 +24,14 @@ public class Punto {
     public int getY () {
         return y;
     }
+    //fin get&set
 
     public double modulo() {
-        double modulo = 0;
-        return modulo;
+        return Math.sqrt(this.x*this.x+this.y*this.y);
     }
     public double fase () {
-        double fase = 0;
-        return fase;
+        double fase = (double) (this.y)/(this.x);
+        return Math.atan(fase);
     }
 
 }

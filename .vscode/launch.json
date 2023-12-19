@@ -4,6 +4,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "tema4oop.Main",
+            "projectName": "oop"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "tema3arrays.Main",
             "projectName": "tema3arrays"
         },
