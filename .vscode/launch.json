@@ -4,6 +4,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "tareaindividuo.Main",
+            "projectName": "individuo"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "tema4oop.Main",
             "projectName": "oop"
         },
