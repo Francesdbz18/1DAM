@@ -1,7 +1,14 @@
 package radio;
-
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        float frecuencia;
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Introduzca la frecuencia");
+        frecuencia = teclado.nextFloat();
+        RadioFM radio = new RadioFM(frecuencia);
+        System.out.println(radio.frecuencia);
+        radio.frecuencia = radio.subirFrec(radio.frecuencia);
+        System.out.println(radio.frecuencia);
     }
 }

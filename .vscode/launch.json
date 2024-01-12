@@ -4,6 +4,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "radio.Main",
+            "projectName": "radio"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "tareaindividuo.Main",
             "projectName": "individuo"
         },

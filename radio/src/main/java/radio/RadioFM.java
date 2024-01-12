@@ -3,8 +3,8 @@ package radio;
 public class RadioFM {
     private final static int frecMin = 80;
     private final static int frecMax = 105;
-    private float frecuencia;
-    private final static float var = 0.5f;
+    float frecuencia = 0;
+    private static double var = 0.5;
 
     public RadioFM (float frecuencia) {
         this.frecuencia = frecuencia;
@@ -23,5 +23,23 @@ public class RadioFM {
 
     public static int getfrecMax () {
         return frecMax;
+    }
+
+    public static double getvar () {
+        return var;
+    }
+
+    public final static void setvar(double var) {
+        var = 0.5;
+    }
+
+    public float subirFrec (float frecuencia) {
+        frecuencia += var;
+        if (frecuencia >= 105.5) frecuencia = 80;
+        return frecuencia;
+    }
+    public void bajarFrec (float frecuencia) {
+        frecuencia = (float) (frecuencia - 0.5);
+        if (frecuencia <= 79.5) frecuencia = 105;
     }
 }

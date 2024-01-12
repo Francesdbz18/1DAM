@@ -61,4 +61,5 @@ public class Individuo { //TODO: edad, altura
 
     }
 
+
 }
