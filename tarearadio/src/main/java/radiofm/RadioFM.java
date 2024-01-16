@@ -1,48 +1,28 @@
 package radiofm;
 
 public class RadioFM {
-	private final static int frecuenciaMin = 80;
-	private final static int frecuenciaMax = 108;
 	private double frecuencia;
-	private final double variacion = 0.5;
-	
-	public void setFrecuencia(double frecuencia) {
-		this.frecuencia = frecuencia;
-	}
-	
-	
-	//Get & Set
-	public double getFrecuencia() {
-		return frecuencia;
-	}
-	
-	public void setFrecuencia() {
-		this.frecuencia = frecuencia;
-	}
-	
-	public static int getFrecuenciaMin() {
-		return frecuenciaMin;
-	}
-	
-	public static int getFrecuenciaMax() {
-		return frecuenciaMax;
-	}
-	
-	//Metodos propios
-	public double aumentarFrecuencia(double frecuencia, double variacion) {
-		frecuencia = frecuencia + variacion;
-		return frecuencia;
-	}
-	
-	public double reducirFrecuencia(double frecuencia, double variacion) {
-		frecuencia = frecuencia - variacion;
-		return frecuencia;
-	}
-	
-	public void mostrarFrecuencia() {
-		System.out.println("La frecuencia es: "+frecuencia);
-	}
+    private String nombre;
 
+    public RadioFM (String nombre, double frecuencia) {
+        this.nombre = nombre;
+        this.frecuencia = frecuencia;
+    }
+
+    public double getFrecuencia() {
+        return frecuencia;
+    }
+    public void setFrecuencia(double frecuencia) {
+        this.frecuencia = frecuencia;
+    }
+    	
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
     /* EMISORAS:
      * - RADIO MARCA: 103.5 FM
      * - HIT FM: 89.9 FM
