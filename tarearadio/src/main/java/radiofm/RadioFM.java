@@ -22,7 +22,7 @@ public class RadioFM {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    
+
     /* EMISORAS:
      * - RADIO MARCA: 103.5 FM
      * - HIT FM: 89.9 FM
@@ -31,4 +31,6 @@ public class RadioFM {
      * - COPE: 106.3 FM
      * - LOS40 DANCE: 92.4 FM
      */
+
+     // Robao: Radio.inicio=(Radio.inicio+1+radio.length)% radio.length; System.out.println("Emisora: "+radio[Radio.inicio].getNombre()+" su frecuencia es: "+radio[Radio.inicio].getFrecuencia());
 }
