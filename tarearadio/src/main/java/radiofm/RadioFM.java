@@ -1,7 +1,5 @@
 package radiofm;
 
-import java.util.Scanner;
-
 public class RadioFM {
 	private final static int frecuenciaMin = 80;
 	private final static int frecuenciaMax = 108;
