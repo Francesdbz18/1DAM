@@ -1,20 +1,14 @@
-package RadioBLOPA;
+package radiofm;
 
 import java.util.Scanner;
 
-public class Radio {
-	Scanner scanner = new Scanner (System.in);
+public class RadioFM {
 	private final static int frecuenciaMin = 80;
 	private final static int frecuenciaMax = 108;
 	private double frecuencia;
 	private final double variacion = 0.5;
 	
 	public void setFrecuencia(double frecuencia) {
-		while (frecuencia<frecuenciaMin || frecuencia>frecuenciaMax) {
-			System.out.println("Error: frecuencia fuera del rango. Intentalo de nuevo.");
-			System.out.println("Ingrese la frecuencia");
-			frecuencia = scanner.nextDouble();
-		}
 		this.frecuencia = frecuencia;
 	}
 	
@@ -50,6 +44,13 @@ public class Radio {
 	public void mostrarFrecuencia() {
 		System.out.println("La frecuencia es: "+frecuencia);
 	}
-	
 
+    /* EMISORAS:
+     * - RADIO MARCA: 103.5 FM
+     * - HIT FM: 89.9 FM
+     * - CADENA DIAL: 91.7 FM
+     * - BOM RADIO: 105.1 FM
+     * - COPE: 106.3 FM
+     * - LOS40 DANCE: 92.4 FM
+     */
 }

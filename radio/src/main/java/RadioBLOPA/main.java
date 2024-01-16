@@ -1,4 +1,4 @@
-package Radio;
+package RadioBLOPA;
 
 import java.util.Scanner;
 

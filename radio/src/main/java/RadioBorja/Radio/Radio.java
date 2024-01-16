@@ -1,4 +1,4 @@
-package Radio;
+package RadioBorja.Radio ;
 
 import java.util.Scanner;
 
