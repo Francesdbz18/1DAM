@@ -31,7 +31,7 @@ public class test {
         System.out.println("Fecha1: "+fecha1);
         System.out.println("Fecha2: "+fecha2);
 
-        fecha2 = fecha1.clone();
+        //fecha2 = fecha1.clone();
         
 
     }
