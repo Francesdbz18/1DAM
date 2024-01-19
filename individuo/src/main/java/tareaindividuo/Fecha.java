@@ -5,6 +5,10 @@ public class Fecha {
     private int mes;
     private int anyo;
 
+    public Fecha () {
+
+    }
+
     public Fecha (int dia, int mes, int anyo) {
         this.dia = dia;
         this.mes = mes;
@@ -83,6 +87,28 @@ public class Fecha {
                 mes = 1;
                 anyo++;
             }    
+        } 
+    }
+    @Override
+    public String toString() {
+        StringBuilder fespañol = new StringBuilder();
+        if (dia<10) {
+            fespañol.append("0");
         }
+        fespañol.append(dia);
+        fespañol.append("-");
+        if(mes<10) {
+            fespañol.append("0");
+        }
+        fespañol.append(mes);
+        fespañol.append("-");
+        fespañol.append(anyo);
+        return fespañol.toString();
+    } //finn & jake
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        Fecha nueva = new Fecha(this.dia, this.mes, this.anyo);
+        return nueva;
     }
 }

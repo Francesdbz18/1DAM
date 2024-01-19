@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "testjx",
+            "request": "launch",
+            "mainClass": "tareaindividuo.testjx",
+            "projectName": "individuo"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "tareaindividuo.test",
+            "projectName": "individuo"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "radio.Main",
