@@ -24,9 +24,9 @@ public class Radio {
 		return frecuencia;
 	}
 	
-	public void setFrecuencia() {
+	/* public void setFrecuencia() {
 		this.frecuencia = frecuencia;
-	}
+	} */
 	
 	public static int getFrecuenciaMin() {
 		return frecuenciaMin;
@@ -43,7 +43,7 @@ public class Radio {
 	}
 	
 	public double reducirFrecuencia(double frecuencia, double variacion) {
-		frecuencia = frecuencia - variacion;
+		frecuencia = frecuencia - this.variacion;
 		return frecuencia;
 	}
 	

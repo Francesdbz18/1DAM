@@ -7,7 +7,7 @@ public class Radio {
 	private final static int frecuenciaMin = 80;
 	private final static int frecuenciaMax = 108;
 	private double frecuencia;
-	private final double variacion = 0.5;
+	private final double variacion = 0;
 	
 	public void setFrecuencia(double frecuencia) {
 		while (frecuencia<frecuenciaMin || frecuencia>frecuenciaMax) {
@@ -24,10 +24,6 @@ public class Radio {
 		return frecuencia;
 	}
 	
-	public void setFrecuencia() {
-		this.frecuencia = frecuencia;
-	}
-	
 	public static int getFrecuenciaMin() {
 		return frecuenciaMin;
 	}
@@ -38,7 +34,7 @@ public class Radio {
 	
 	//Metodos propios
 	public double aumentarFrecuencia(double frecuencia, double variacion) {
-		frecuencia = frecuencia + variacion;
+		frecuencia = frecuencia + this.variacion;
 		return frecuencia;
 	}
 	

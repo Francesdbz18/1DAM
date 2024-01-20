@@ -1,6 +1,6 @@
 package tareaindividuo;
 
-public class Individuo { //TODO: edad, altura
+public class Individuo { //
     private String dni;
     private String nombre;
     private int fechaNacimiento;

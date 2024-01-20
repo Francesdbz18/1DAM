@@ -14,7 +14,7 @@ public class Main {
         valorY = punto4.getY();
 
         double moduloP4 = punto4.modulo();
-        System.out.println("Punto 4:\n- Valor de X: "+valorX+"\n- Valor de Y: "+valorY+"\n- Módulo: "+moduloP4+"\n- Fase: "+ punto4.fase());
+        System.out.println("Punto 4:\n- Valor de X: "+valorX+"\n- Valor de Y: "+valorY+"\n- Módulo: "+moduloP4+"\n- Fase: "+ punto4.fase() + punto1 + punto3);
         punto4 = null;
         System.gc();  
     }

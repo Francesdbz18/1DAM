@@ -4,7 +4,6 @@ public class NumNaturales {
     private int inicial, maximo;
     public NumNaturales (int inicial, int mainicialimo) {
         this.inicial = inicial;
-        this.maximo = maximo;
     }
     /*GETTERS & SETTERS*/
     public void setinicial (int inicial) {

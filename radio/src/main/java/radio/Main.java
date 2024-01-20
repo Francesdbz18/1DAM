@@ -1,5 +1,6 @@
 package radio;
 import java.util.Scanner;
+@SuppressWarnings("resource")
 public class Main {
     public static void main(String[] args) {
         float frecuencia;
