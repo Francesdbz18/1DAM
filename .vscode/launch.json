@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "herencia.Main",
+            "projectName": "herencia"
+        },
+        {
+            "type": "java",
             "name": "testjx",
             "request": "launch",
             "mainClass": "tareaindividuo.testjx",
