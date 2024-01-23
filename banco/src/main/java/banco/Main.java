@@ -1,5 +1,6 @@
 package banco;
-
+import java.awt.Component;
+import javax.swing.JOptionPane;
 public class Main {
     public static void main(String[] args) throws Exception {
         Cuenta cuenta1 = new Cuenta();
@@ -15,5 +16,8 @@ public class Main {
 
         cuenta1.reintegro(2500);
         System.out.println(cuenta1.toString());
+
+        JOptionPane.showMessageDialog(null, "te voy a hacer mierda", "sos pollo", 2);
+
         }
 }
