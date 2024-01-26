@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "radiofm.Main",
+            "projectName": "tarearadio"
+        },
+        {
+            "type": "java",
             "name": "testjx",
             "request": "launch",
             "mainClass": "tareaindividuo.testjx",
