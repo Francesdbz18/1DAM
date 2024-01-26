@@ -4,8 +4,20 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+<<<<<<< HEAD
             "mainClass": "radiofm.Main",
             "projectName": "tarearadio"
+=======
+            "mainClass": "banco.Main",
+            "projectName": "banco"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "herencia.Main",
+            "projectName": "herencia"
+>>>>>>> 04eb1be3cb410ac0c190dad01953ad3f50b9afe7
         },
         {
             "type": "java",
