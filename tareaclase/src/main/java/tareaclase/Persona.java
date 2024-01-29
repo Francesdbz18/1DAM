@@ -2,7 +2,18 @@ package tareaclase;
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
 public class Persona {
-    private String nombre;
+    protected String nombre;
+    protected String dni;
+    protected LocalDateTime fechaNacimiento; 
+
+    public Persona () {}
+
+    public Persona(String nombre, String dni, LocalDateTime fechaNacimiento) throws Exception {
+        this.nombre = nombre;
+        this.dni = dni;
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
     public String getNombre() {
         return nombre;
     }
@@ -10,22 +21,13 @@ public class Persona {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
-    private String dni;
+    
     public String getDni() {
         return dni;
     }
 
     public void setDni(String dni) {
         this.dni = dni;
-    }
-
-    private LocalDateTime fechaNacimiento; 
-
-    public Persona(String nombre, String dni, LocalDateTime fechaNacimiento) {
-        this.nombre = nombre;
-        this.dni = dni;
-        this.fechaNacimiento = fechaNacimiento;
     }
 
     public LocalDateTime getFechaNacimiento() {
