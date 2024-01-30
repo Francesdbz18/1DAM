@@ -1,6 +1,5 @@
 package tareaclase;
 
-import java.time.LocalDateTime;
 
 public class Profesor extends Persona {
 
@@ -10,7 +9,7 @@ public class Profesor extends Persona {
     public Profesor() {
 
     }
-    public Profesor(String nombre, String dni, LocalDateTime fechaNacimiento, String cuentaBancaria, double nomina) throws Exception {
+    public Profesor(String nombre, String dni, String cuentaBancaria, double nomina, String fechaNacimiento) throws Exception {
         super(nombre, dni, fechaNacimiento);
         this.cuentaBancaria = cuentaBancaria;
         this.nomina = nomina;
