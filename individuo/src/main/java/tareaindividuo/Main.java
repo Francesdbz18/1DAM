@@ -18,5 +18,7 @@ public class Main {
         sara.establecer(Integer.parseInt(JOptionPane.showInputDialog("Introduzca su NIF")));
         String NIF = sara.obtenerNIF();
         System.out.println(NIF);
+
+        JOptionPane.showOptionDialog(null, sara, NIF, 1, 1, null, , NIF);
     }
 }
