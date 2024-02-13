@@ -14,6 +14,7 @@ drop table if exists pokemon
 
 create table if not exists pokemon (
 PID int primary key
+nombre varchar(50) not null,
 altura int not null
 peso int not null
 fechaObtenido timestamp not null
