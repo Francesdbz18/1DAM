@@ -1,0 +1,99 @@
+/etc/passwd
+Este fichero es accesible para todos los usuarios, ya que no incluye datos sensibles de los usuarios. Contiene un registro por cada usuario de la máquina, separados por saltos de línea.  Así se vería un registro del fichero /etc/passwd:
+
+ubuntussii:x:1000:1000:UbuntuSSII,,,:/home/ubuntussii:/bin/bash
+
+En este, se encuentra de primero el nombre de usuario a efectos del sistema. Se usan dos puntos (:) para separar cada campo. En orden, la información de cada registro es: 
+
+Nombre de usuario.
+Contraseña (no se puede ver.)
+UID: Identificador de usuario. En usuarios nuevos va desde el 1000.
+GID: Identificador de grupo. 
+GECOS: Información del usuario. En este caso sólo se encuentra el nombre.
+Directorio personal del usuario.
+Shell del usuario, por defecto el del sistema.
+/etc/shadow
+
+Por el contrario, el fichero /etc/shadow es sólo accesible mediante el usuario root o tomando funciones de superusuario con sudo, ya que en el mismo encontramos información sensible de las contraseñas de los usuarios. Los campos son igualmente separados por dos puntos, por ejemplo:
+
+ubuntussii:$y$j9T$4M1F5aaiyTri/GVdm9c/h.$.whvSH3LCOCkoXioCkukKfcS1djeqWpTRe0we8oWDk8:19688:0:99999:7:::
+
+Nombre de usuario.
+Contraseña cifrada 
+Días desde 01-01-1970 donde la contraseña se cambió por última vez.
+Días máximos de validez de la cuenta.
+Días de aviso hasta la caducidad de la contraseña.
+Fecha de caducidad de la contraseña en días desde 01-01-1970.
+/etc/group
+
+En este fichero, accesible para todos, encontramos información de los grupos que se encuentran en nuestro sistema. Un registro del fichero se vería así: 
+
+aprobados:x:1002:ubuntussii
+
+Lo primero es el nombre del grupo.
+Contraseña del grupo, si la tuviera.
+GID, número identificador del grupo.
+Miembros del grupo.
+Pregunta 2
+Finalizado
+Puntúa como 2,00
+Marcar pregunta
+Enunciado de la pregunta
+Describe los tipos de conectividad y las funciones de red que puede tener un teléfono móvil, tal como se explicó en clase.
+
+Texto de la respuesta Pregunta 2
+Bluetooth e infrarrojos: Se trata de redes de alcance muy limitado para conexión de dispositivos personales, como audífonos o televisores, por lo que se trata de redes de tipo PAN (Personal Area Network).
+Wi-Fi: Redes inalámbricas de ámbito local, con alcance de entre 15 y 90 metros, por lo que se trata de WLAN (Wireless LAN, Local Area Network inalámbrica.)
+Redes móviles: Las redes móviles, sean 3G, 4G, 5G, etcétera, se conectan a redes de telefonía, como LTE, por lo tanto serían de tipo WAN (Wide Area Network). 
+
+
+Pregunta 3
+Finalizado
+Puntúa como 3,00
+Marcar pregunta
+Enunciado de la pregunta
+En tu máquina virtual Linux, crea un ejemplo que demuestre que según los permisos de un fichero un usuario u otro pueden hacer cosa distintas sobre él.
+
+
+Crea al menos dos usuarios para ello.
+
+Utiliza método OCTAL y SIMBOLICO para modificar permisos de los ficheros
+
+
+
+
+
+Texto de la respuesta Pregunta 3
+Para empezar, se crean dos usuarios, ambos con contraseña password.
+
+sudo useradd -m -d /home/chesco -p $(openssl passwd -1 password) chesco
+
+
+sudo useradd -m -d /home/chesco2 -p $(openssl passwd -1 password) chesco2
+
+Cambiamos a uno de los usuarios, en este caso a chesco. Posteriormente se crea el fichero que vayan a manipular ambos usuarios, en este caso con
+
+echo "hola" > ficheropermisos.txt
+
+Luego se modifican los permisos de los usuarios sobre los ficheros con los métodos octal y simbólico, como se pide en el ejercicio. 
+
+En principio, los permisos del usuario dueño chesco, vistos con ls -l son: -rw-rw-r--, es decir, propietario y grupo pueden leer y escribir, y otros usuarios pueden leer. 
+
+Modificamos los permisos, en este caso usamos chmod 774, que representan lectura, escritura y ejecución para el propietario y el grupo, y sólo lectura para el resto. 
+
+Si cambiamos de usuario a chesco2, veremos que se nos deniega el permiso para modificar el archivo. 
+
+Para modificar los permisos del archivo, de modo que chesco2 pueda también escribir en el archivo, usamos: 
+
+chmod o=rw ficheropermisos.txt
+
+Tras esto, si usamos ls -l tendremos:
+
+-rwxrwxrw-
+
+Lo cual significa que otros usuarios, como chesco2 podrán escribir también en el archivo. 
+
+
+
+
+
