@@ -1,0 +1,56 @@
+@startuml relaciones
+Bob -|> Alice:  Herencia
+Bob2 --o Alice2:  Agregación
+Bob3 *-- Alice3: Composicion
+Bob4..Alice4:  Dependencia 
+Bob5 -- Alice5:  Asociación
+@enduml
+
+@startuml biblioteca
+class Biblioteca {
+- libros: Libro[]
++ agregarLibro(libro: Libro): void
++ buscarLibro(titulo: String): Libro
+}
+class Libro {
+- titulo: String
+- autores: Autor[]
++ Libro(titulo: String)
++ agregarAutor(autor: Autor): void
+}
+class Autor {
+- nombre: String
++ Autor(nombre: String)
+}
+Biblioteca "1" *-- "*" Libro:tiene
+Libro "1" o-- "*" Autor
+@enduml
+
+@startuml orquesta
+left to right direction
+class orquesta {
+- atributos
++ metodos
+}
+class violin {
+- atributos
++ metodos
+}
+class tambor {
+- atributos
++ metodos
+}
+class trombon {
+- atributos
++ metodos
+}
+class clarinete {
+- atributos
++ metodos
+}
+orquesta "1" *--> "1" violin
+orquesta"1" *--> "0..*" tambor
+orquesta "1" *--> "1..5" trombon
+orquesta "1" *--> "1..4" clarinete
+trombon .. clarinete: {or}
+@enduml
