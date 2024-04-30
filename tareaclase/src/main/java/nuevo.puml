@@ -54,3 +54,38 @@ orquesta "1" *--> "1..5" trombon
 orquesta "1" *--> "1..4" clarinete
 trombon .. clarinete: {or}
 @enduml
+
+@startuml usecase
+left to right direction
+:Cliente: as C
+actor Administrativo as A
+RECTANGLE VENTAS {
+(Buscar productos) as BP
+usecase "Comprar productos" as CP 
+usecase "Insertar productos" as IP
+}
+C -- BP
+C -- CP
+A -- IP
+
+
+@enduml
+
+@startuml usecase2
+left to right direction
+:Agente: as A
+usecase "RealizarReserva" as RR 
+usecase "ModificarReserva" as MR
+usecase "ComprobarAsientos" as CA
+A -- RR
+A -- MR
+RR ..> CA : <<extends>>
+MR ..> CA : <<extends>>
+@enduml
+
+@startuml herencia
+:Encargado: as encargado
+:Empelado: as empleado
+empleado --|> encargado
+@enduml
+
